@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAM</title>
-    <link rel="stylesheet" href="stylepc.css" />
+    <link rel="stylesheet" href="/static/css/stylepc.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,25 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/static/css/output.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
   </head>
   <body>
-    <div class="navbar">
-      <div class="leftNav">
-        <div class="home ACTIVE"><a href="#">Home</a></div>
-        <div class="About"><a href="#">About US</a></div>
-        <div class="Events"><a href="#">Events</a></div>
-      </div>
-      <div class="middleNav">
-        <div class="title">FAM</div>
-      </div>
-      <div class="rightNav">
-        <div class="contact"><a href="#">Contact Us</a></div>
-        <div class="profile"><i class="fa-solid fa-circle-user"></i></div>
-      </div>
-    </div>
+    <div id="navbar"></div>
 
     <div class="mainPage">
       <div class="leftMain"></div>
@@ -43,8 +31,8 @@
     </div>
 
     <div class="aboutPage">
-      <div class="space"></div>
-      <div class="aboutTitle">About Us ...</div>
+      
+      <div class="aboutTitle"><h2>About Us</h2></div>
       <div class="aboutContent">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, odio,
         corrupti veniam eligendi architecto culpa pariatur maxime hic aperiam
@@ -76,14 +64,15 @@
       <div class="eventsTitle">Upcoming Events...</div>
       <div class="eventsGrid">
         <div class="gridContainer">
-            <div class="gridLeft">
-                <div class="image1"></div>
-                <div class="image2"></div>
-            </div>
-            <div class="gridMid"></div>
-            <div class="gridRight"></div>
+          <div class="gridLeft">
+            <div class="image1"></div>
+            <div class="image2"></div>
+          </div>
+          <div class="gridMid"></div>
+          <div class="gridRight"></div>
         </div>
       </div>
     </div>
+    <script src="/static/js/nav-handler.js"></script>
   </body>
 </html>
