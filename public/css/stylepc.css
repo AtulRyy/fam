@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Jost, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+body {
+  background: #000;
+  -ms-overflow-style: none;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.navbar {
+  width: 100vw;
+  height: 11vh;
+  background: rgb(19, 11, 47);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+.navbar div div a:hover,
+.ACTIVE a {
+  color: rgb(187, 0, 0);
+  border-bottom: 3px solid rgb(187, 0, 0);
+  font-weight: 700;
+}
+.leftNav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 35vw;
+  margin-left: 20px;
+}
+.leftNav div {
+  padding: 15px;
+}
+.leftNav div a {
+  padding-bottom: 3px;
+  letter-spacing: 1.6px;
+}
+.middleNav {
+  display: flex;
+}
+.rightNav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 35vw;
+  margin-right: 20px;
+}
+.rightNav div {
+  padding: 15px;
+}
+.rightNav div a {
+  letter-spacing: 1.6px;
+}
+i {
+  color: white;
+}
+.title {
+  color: rgb(187, 0, 0);
+  font-size: 3.5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+.fa-circle-user {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.mainPage {
+  display: flex;
+  height: calc(100vh);
+  background-image: url(./bg.png);
+}
+.leftMain {
+  width: 50vw;
+}
+.rightMain {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fam {
+  padding-top: 15vh;
+  color: rgb(187, 0, 0);
+  font-size: 12rem;
+}
+.tagline {
+  color: rgb(163, 0, 0);
+  font-size: 1.5rem;
+  word-spacing: 1rem;
+  letter-spacing: 0.4rem;
+  font-weight: 600;
+}
+.from {
+  padding-top: 5vh;
+  color: rgb(163, 0, 0);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.ezone {
+  color: rgb(163, 0, 0);
+  font-size: 1.9rem;
+}
+.space {
+  height: 11vh;
+}
+.eventsPage,
+.aboutPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./bg2.png);
+}
+.eventsTitle,
+.aboutTitle {
+  color: rgb(163, 0, 0);
+  font-size: 3rem;
+  height: 12vh;
+  display: flex;
+  align-items: end;
+  padding-left: 5vw;
+  font-weight: 800;
+}
+
+.aboutContent {
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  height: calc(100vh - 12vh - 11vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10vw;
+}
+
+.eventsGrid {
+  height: calc(100vh - 11vh - 18vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridContainer {
+  width: 80vw;
+  height: 65vh;
+}
+.gridLeft {
+  width: 16vw;
+}
+.gridMid {
+  width: 32vw;
+}
+.gridRight {
+  width: 32vw;
+}
