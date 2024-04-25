@@ -1,61 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/css/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body class="bg-black">
-    <div id="navbar"></div>
-    <div class="w-fit">
-      <div
-        class="sign-in-box bg-[#1A1A2E] rounded-lg py-10 px-28 text-center w-fit mt-20"
-      >
-        <div>
-          <h2 class="font-bold text-white text-4xl mb-2">Welcome Back!</h2>
-          <p class="text-xl text-white mb-11">
-            Please enter your details to sign in.
-          </p>
-          <div class="input-boxes">
-            <label for="username" class="text-white text-left block mb-2"
-              >Username</label
-            >
-            <input
-              type="text"
-              name="username"
-              id="username"
-              class="w-full mb-5 p-3 rounded-lg"
-            />
-            <label for="password" class="text-white text-left block mb-2"
-              >Password</label
-            >
-            <input
-              type="password"
-              name="password"
-              id="password"
-              class="w-full p-3 rounded-lg"
-            />
-          </div>
-          <div class="w-full flex justify-end text-[#76ABAE] mt-2">
-            <p class="underline">Forgot Password</p>
-          </div>
-          <button class="px-10 py-2 bg-[#31363F] text-white w-full mt-6">
-            Sign-in
-          </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAM</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/styleIndex.css">
+        <link rel="stylesheet" href="/static/css/styleIndexMobile.css">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    </head>
+    <body>
+        <nav>
+            <div id="mySidebar" class="sidebar navLeft">
+                <div href="javascript:void(0)" onclick="closeNav()" class="closebtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+                <div class="#"><a href="">Home</a></div>
+                <div><a href="aboutPageLink">About us</a></div>
+                <div><a href="eventsPageLink">Events</a></div>
+            </div>
+            <div id="main" class="navMid">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button> 
+                <div class="famTitle">FAM</div>
+                <div class="phoneMenuAccount"><i class="fa-solid fa-user-circle"></i></div>
+            </div>
+            <div class="navRight">
+                <div class="contactUs">Contact us</div>
+                <a href=""><i class="fa-solid fa-user-circle"></i></a>
+            </div>
+        </nav>
+        <div id="homePageLink" class="space"></div>
+        <div class="mainPage">
+            <div class="leftMain">
+                
+            </div>
+            <div class="rightMain">
+                <img src="/static/images/famBox.png" alt>
+            </div>
         </div>
-      </div>
-      <p class="text-white text-xl text-center">Don’t have an account?
-        <a href="#" class="text-[#76ABAE] underline">Join and explore the impossibles</a>
-        </p>
-    </div>
-    <script src="/static/js/nav-handler.js"></script>
-  </body>
+
+        <div id="aboutPageLink" class="aboutPage">
+            <div class="space"></div>
+            <div class="aboutTitle">About Us</div>
+            <div class="aboutContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                odio,
+                corrupti veniam eligendi architecto culpa pariatur maxime hic
+                aperiam
+                ipsam consectetur, tenetur velit temporibus ut aliquid ea quia?
+                Provident nihil est cumque. Cum perferendis, nihil consectetur
+                beatae
+                magni molestias iure officia, iste harum sequi quis.
+                Perspiciatis,
+                inventore. Fugit quas culpa maxime maiores vel consequuntur hic
+                ab odio,
+                laborum voluptatem nobis eius dolore debitis, tempora voluptas
+                error
+                earum nihil exercitationem excepturi, minima eligendi dolor
+                omnis
+                impedit. Explicabo repellat velit labore officia temporibus
+                nobis
+                deleniti quisquam, facilis voluptates ea voluptatibus. Velit
+                fugiat,
+                dolor quam officia numquam autem accusantium eveniet distinctio
+                esse
+                soluta perspiciatis nam mollitia atque, molestiae architecto
+                unde
+                consequuntur nihil. Porro hic omnis itaque. Tempore ipsum velit
+                non
+                obcaecati dolores nemo corrupti culpa ut mollitia? Sint possimus
+                ipsa
+                unde, aut sit voluptates dolorum porro mollitia corporis, ipsum
+                minus
+                amet odit! Eveniet accusantium qui fuga excepturi? Rerum numquam
+                error
+                quod excepturi, reprehenderit facilis, corporis quibusdam
+                dolorem velit
+                aliquam deserunt quae magni sunt eos eum dolor maiores, labore
+                repellat.
+                Debitis nulla sit adipisci. Autem fuga veritatis eum, quis ex
+                doloribus
+                saepe magnam ut ad doloremque officiis dolores, repudiandae
+                tempore
+                minima odio inventore voluptas laboriosam deserunt pariatur
+                porro
+                laborum! Necessitatibus cum iusto ullam impedit.
+            </div>
+        </div>
+
+
+
+        <div id="eventsPageLink" class="eventsPage">
+            <div class="space"></div>
+            <div class="eventsTitle">Upcoming Events</div>
+            <div class="eventsGrid">
+                <div class="gridContainer">
+                    <div class="gridLeft">
+                        <div class="image1"><img src="/static/images/image1.png"
+                                alt /></div>
+                        <div class="image2"><img src="/static/images/image2.png"
+                                alt /></div>
+                    </div>
+                    <div class="gridMid">
+                        <div class="image3"><img src="/static/images/image3.png"
+                                alt /></div>
+                        <div class="image4"><img src="/static/images/image4.png"
+                                alt /></div>
+                    </div>
+                    <div class="gridRight">
+                        <div class="gridRightTop">
+                            <div class="image5"><img src="/static/images/image5.png"
+                                    alt /></div>
+                            <div class="image6"><img src="/static/images/image6.png"
+                                    alt /></div>
+                        </div>
+                        <div class="gridRightMid">
+                            <div class="image7"><img src="/static/images//image7.png"
+                                    alt /></div>
+                        </div>
+                        <div class="gridRightDown">
+                            <div class="image8"><img src="/static/images/image8.png"
+                                    alt /></div>
+                            <div class="image9"><img src="/static/images/image9.png"
+                                    alt /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="clubname">FAM CLUB</div>
+            <div class="detailsGrid">
+                <div class="location">
+                    <div class="detailsGridHeading">LOCATION</div>
+                    <div class="li">Kochi</div>
+                    <div class="li">Trivandrum</div>
+                    <div class="li">Thrissur</div>
+                </div>
+                <div class="usefulLinks">
+                    <div class="detailsGridHeading">USEFUL LINKS</div>
+                    <div class="li">Privacy Policy</div>
+                    <div class="li">Terms and Conditions</div>
+                </div>
+                <div class="email">
+                    <div class="detailsGridHeading">EMAIL</div>
+                    <div class="li">info@famclub</div>
+                </div>
+                <div class="phone">
+                    <div class="detailsGridHeading">PHONE</div>
+                    <div class="li">9999039903</div>
+                    <div class="li">8393920002</div>
+                </div>
+            </div>
+            <hr />
+            <div class="copyright">&#169; 2024 FAM Club</div>
+        </div>
+
+        <script src="/static/js/script.js"></script>
+    </body>
 </html>

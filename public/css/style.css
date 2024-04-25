@@ -1,0 +1,339 @@
+:root{
+    --primary: #12121F;
+    --secondary: #262638;
+    --RedText: #AB2330;
+    --lightRedText: #E94560;
+    --buttonColors:#76ABAE; 
+}
+
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+body{
+    background: var(--primary);
+    font-family: poppins, sans-serif;
+}
+
+@media (min-width:961px){
+    .nav2{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid grey;
+    margin: 0 30px;
+}
+
+.mainContainer{
+    min-height: 88vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.memLeft, .memRight{
+    min-height: 80vh;
+    background: var(--secondary);
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+.memLeft{
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.memRight{
+    width: 79vw;
+    padding: 40px;
+}
+.memRight2{
+    min-height: 80vh;
+    background: var(--secondary);
+    background-size: cover;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    width: 79vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.memLeftTop div{
+    padding: 20px 30px;
+    margin: 15px 0;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+.activeMemOption, .memLeftTop div:hover, .memSettings:hover{
+    background: #353543;
+}
+.memSettings{
+    padding: 20px 35px;
+    margin: 15px 0;
+    border-radius: 15px;
+    font-size: 1.6rem;
+}
+.memRight h1{
+    color: lightgrey;
+}
+.memRight h3{
+    padding: 20px 0;
+    color: var(--buttonColors);
+    font-weight: 300;
+}
+.memTypeOptionsContainer{
+    display: flex;
+    margin-bottom: 25px;
+}
+.memTypeOption{
+    background: #E94560;
+    padding: 5px 15px;
+    width: 12%;
+    text-align: center;
+    margin-right: 30px;
+    border-radius: 1px;
+}
+.memTypeOption:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.memRight form{
+    margin-top: 40px;
+}
+.memRight form input{
+    width: 95%;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    color: lightgrey;
+}
+.memRight form label{
+    color: var(--buttonColors);
+}
+.memRight form i{
+    font-size: 1.5rem;
+}
+.generateCardBtn, .printBtn{
+    background: var(--buttonColors);
+    text-align: center;
+    margin: auto;
+    width: 25%;
+    padding: 12px 20px;
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgb(48, 48, 48);
+    border-radius: 12px;
+    font-size: 1.4rem;
+}
+.generateCardBtn:hover, .printBtn:hover, .signInBtn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.famTitle{
+    color: var(--RedText);
+    font-size: 3.6rem;
+    font-family: "Alata", sans-serif;
+}
+.logout{
+    color: lightgray;
+    font-size: 1.4rem;
+}
+.cardContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.cardContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardFront img {
+    width: 100%;
+}
+.cardFront, .cardBack{
+    width: 45%;
+}
+.cardBack{
+    background: url(/static/images/cardBack.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 10px 0px;
+    justify-content: space-around;
+}
+.cardBack div{
+    padding: 25px;
+}
+.cardBack div div h5{
+    color: var(--RedText);
+}
+.cbDown div{
+    display: flex;
+    flex-direction: column;
+}
+.cbTop{
+    font-size: 2rem;
+    color: lightgray;
+}
+.cbDown div div{
+    color: lightgray;
+}
+.cardFront, .cardBack{
+    border-radius: 25px;
+}
+nav{
+    background: #1A1A2E;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: lightgray;
+}
+nav div a{
+    font-size: 1.25rem;
+    color: lightgray;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.navLeft{
+    width: 37.5%;
+    justify-content: start;
+    margin-left: 3%;
+}
+.navLeft div{
+    margin-right: 35px;
+}
+.navLeft .ACTIVE,
+.navLeft div:hover
+{
+    color: var(--lightRedText);
+    border-bottom: 4px solid var(--lightRedText);
+    border-radius: 3px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+.contactUs:hover{
+    color: var(--lightRedText);   
+    cursor: pointer;
+}
+.navMid{
+    width: 25%;
+}
+.navRight{
+    width: 37.5%;
+    justify-content: end;
+    margin-right: 3%;
+}
+.navRight div{
+    margin-left: 35px;
+}
+.navRight div i{
+    font-size: 3rem;
+}
+.loginMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.loginLeft{
+    width: 45%;
+    padding: auto 15px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginLeft img{
+    width: 60%;
+}
+.loginRight{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.accountsRight{
+  width: 70%;
+  background: var(--secondary);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.799);
+  padding: 40px 20px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.accountsRightBottom{
+  background: var(--secondary);
+  display: flex;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.799);
+  padding: 40px 20px;
+  border-radius: 7px;
+}
+
+.accountsRight form input{
+  width: 60%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.signInBtn{
+  text-align: center;
+  margin: 2vh 30%;
+  background: #999;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 40%; 
+  color: #000;
+}
+.signInBtn:hover{
+    cursor: pointer;
+}
+form label h4{
+    padding-left: 20%;
+}
+form div a h5{
+    padding-right: 20%;
+}
+.phoneMenuAccount{
+    display: none;
+}
+.openbtn{
+    display: none;
+}
+.closebtn{
+    display: none;
+}
+}
+

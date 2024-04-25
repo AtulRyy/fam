@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/style.scss">
+        <link rel="stylesheet" href="/static/css/styleMobile.css">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    </head>
+    <body style="background: black;">
+        <nav>
+            <div id="mySidebar" class="sidebar navLeft">
+                <div href="javascript:void(0)" onclick="closeNav()" class="closebtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+                <div class="ACTIVE"><a href="">Home</a></div>
+                <div><a href="">About us</a></div>
+                <div><a href="">Events</a></div>
+            </div>
+            <div id="main" class="navMid">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button> 
+                <div class="famTitle">FAM</div>
+                <div class="phoneMenuAccount"><i class="fa-solid fa-user-circle"></i></div>
+            </div>
+            <div class="navRight">
+                <div class="contactUs">Contact us</div>
+                <div><i class="fa-solid fa-user-circle"></i></div>
+            </div>
+        </nav>
+        <div class="loginMainContainer">
+            <div class="loginLeft">
+                <img src="/static/images/famBox.png" alt>
+            </div>
+            <div class="loginRight">
+                <div class="accountsRight">
+                    <div><h1>Welcome Back!</h1></div>
+                    <br>
+                    <div><h3>Please enter your details to sign in.</h3></div>
+                    <br>
+                    <br>
+                    <form>
+
+                        <label class="entryTitle" for><h4
+                                style="color: #999; text-align: left;">Username
+                                or e-mail id</h4></label>
+                        <input placeholder type="text" id name />
+                        <br>
+                        <br>
+                        <label class="entryTitle" for><h4
+                                style="color: #999; text-align: left;">Pasword</h4></label>
+                        <input placeholder type="password" id name />
+                        <br>
+                        <div
+                            style="text-align: right; text-decoration: underline;"
+                            class><a href="#"><h5 style="color: #76abae;">forgot
+                                    password</h5></a></div>
+                        <br>
+                        <div class="signInBtn">Sign in</div>
+                        <div class="accountRightBottom">
+                    <h4 style="color: #999; text-align: center;">Dont have an
+                        account?</h4>
+                    <a href="#"><h4
+                            style="text-decoration: underline; color: #76abae; text-align: center;">Join
+                            and explore the impossible.</h4></a>
+                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/js/script.js"></script>
+    </body>
+</html>

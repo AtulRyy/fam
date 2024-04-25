@@ -1,0 +1,377 @@
+@media (max-width:481px) {
+
+
+.mainContainer{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.memRight{
+    min-height: 80vh;
+    background: var(--secondary);
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    width: 90vw;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.memLeft{
+    background: var(--secondary);
+    border-radius: 25px;
+    /* padding: 20px; */
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+    margin: 20px 0;
+}
+
+.memRight2{
+    min-height: 60vh;
+    background: var(--secondary);
+    background-size: cover;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.memLeftTop div{
+    padding: 15px 20px;
+    margin: 15px 0;
+    width: 80vw;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+.memLeftDown{
+    width: 80vw;
+}
+.activeMemOption, .memLeftTop div:hover, .memSettings:hover{
+    background: #353543;
+}
+.memSettings{
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+.memRight h1{
+    color: lightgrey;
+    margin-bottom: 15px;
+}
+.memRight h3{
+    padding: 10px 0;
+    color: var(--buttonColors);
+    font-weight: 600;
+}
+.memTypeOptionsContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.memTypeOption{
+    background: #e94560a6;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.745);
+}
+.SELECTED , .memTypeOption:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    background: #E94560;
+    color: white;
+    font-weight: 900;
+}
+
+.memRight form input{
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    color: lightgrey;
+}
+.memRight form label{
+    color: var(--buttonColors);
+}
+.memRight form i{
+    font-size: 1rem;
+    /* display: none; */
+}
+.generateCardBtn, .printBtn{
+    background: var(--buttonColors);
+    text-align: center;
+    margin: auto;
+    min-width: 60%;
+    max-width: 90%;
+    padding: 12px;
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgb(48, 48, 48);
+    border-radius: 12px;
+    font-size: 1.4rem;
+}
+.printBtn{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.generateCardBtn:hover, .printBtn:hover, .signInBtn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.logout{
+    color: lightgray;
+    font-size: 1.4rem;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.cardFront img {
+    width: 100%;
+}
+.cardFront, .cardBack{
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.cardBack{
+    background: url(/static/images/cardBack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 30px 10px 0px; */
+    justify-content: space-around;
+    height: 25vh;
+}
+
+.cardBack div div h5{
+    color: var(--RedText);
+}
+.cbDown{
+    width: 65%;
+}
+.cbDown div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 20px; */
+}
+.cbTop{
+    font-size: 1.2rem;
+    color: lightgray;
+}
+.cbDown div div{
+    color: lightgray;
+}
+.cbDown div h5{
+    font-size: 0.8rem;
+}
+
+.userValue{
+    font-size: 0.9rem;
+}
+
+.loginMainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginLeft{
+    width: 100%;
+    padding: auto 15px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.loginLeft img{
+    width: 50%;
+}
+a{
+    text-decoration: none;
+}
+.loginRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0; */
+    margin-bottom: 10px;
+}
+.accountsRight{
+  width: 92%;
+  background: var(--secondary);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.799);
+  padding: 40px 20px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.accountsRightBottom{
+  background: var(--secondary);
+  display: flex;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.799);
+  padding: 40px 20px;
+  border-radius: 7px;
+}
+
+.accountsRight form input{
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.signInBtn{
+  text-align: center;
+  margin: 2vh 30%;
+  background: #999;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 40%; 
+  color: #000;
+}
+.signInBtn:hover{
+    cursor: pointer;
+}
+form label h4{
+    padding-left: 5%;
+}
+form div a h5{
+    padding-right: 5%;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background: #1A1A2E;
+  box-shadow: 5vw 0 20px -5px #000000;
+  border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.sidebar div a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: lightgray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.closebtn{
+      padding: 15px 0px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: lightgray;
+  display: block;
+  transition: 0.3s;
+}
+
+.openbtn{
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: rgba(0, 0, 0, 0) ;
+  color: white;
+}
+.phoneMenuAccount{
+    font-size: 2.5rem;
+  cursor: pointer;
+  border: none;
+  background: rgba(0, 0, 0, 0) ;
+  color: white;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background: #1A1A2E;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar div {font-size: 18px;}
+}
+.navRight{
+    display: none;
+}
+.famTitle{
+    color: var(--RedText);
+    font-size: 3.6rem;
+    font-family: "Alata", sans-serif;
+    display: none;
+}
+.famTitle2{
+    color: var(--RedText);
+    font-size: 3rem;
+    font-family: "Alata", sans-serif;
+}
+.nav2{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin: 0 3%;
+    border-bottom: 1px solid gray ;
+}
+.nav2 div{
+    margin: 10px;
+}
+}
