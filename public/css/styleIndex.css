@@ -375,6 +375,7 @@ i {
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  background: linear-gradient(#38385c00, black);
 }
 .clubname {
   color: var(--primary);
