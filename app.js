@@ -16,6 +16,6 @@ app.use('/card',cardRoute);
 app.use('/login',loginRoute)
 app.use('/member',memberRoute)
 
-app.listen(3000,()=>{
-    console.log("server is now listening on 3000");
+app.listen(5000,()=>{
+    console.log("server is now listening on 5000");
 })
