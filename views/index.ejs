@@ -16,28 +16,7 @@
         <meta name="mobile-web-app-capable" content="yes" />
     </head>
     <body>
-        <nav>
-            <div id="mySidebar" class="sidebar navLeft">
-                <div href="javascript:void(0)" onclick="closeNav()"
-                    class="closebtn">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="firstOption ACTIVE"><a href="#homePageLink">Home</a></div>
-                <div><a href="#aboutPageLink">About us</a></div>
-                <div><a href="#eventsPageLink">Events</a></div>
-            </div>
-            <div id="main" class="navMid">
-                <button class="openbtn" onclick="openNav()"><i
-                        class="fa-solid fa-bars-staggered"></i></button>
-                <div class="famTitle">FAM</div>
-                <div class="phoneMenuAccount"><i
-                        class="fa-solid fa-user-circle"></i></div>
-            </div>
-            <div class="navRight">
-                <div class="contactUs">Contact us</div>
-                <a href><i class="fa-solid fa-user-circle"></i></a>
-            </div>
-        </nav>
+        <div id="navbar"></div>
         <div id="homePageLink" class="space"></div>
         <div class="mainPage">
             <div class="leftMain">
@@ -160,7 +139,7 @@
             </div>
             <div class="copyright">&#169; 2024 FAM Club</div>
         </div>
-
+        <script src="/static/js/nav-handler.js"></script>
         <script src="/static/js/script.js"></script>
     </body>
 </html>
