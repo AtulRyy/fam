@@ -252,8 +252,9 @@ a{
 .navRight div{
     margin-left: 35px;
 }
-.navRight div i{
+.navRight a i{
     font-size: 3rem;
+    margin-left: 35px;
 }
 .loginMainContainer{
     display: flex;
