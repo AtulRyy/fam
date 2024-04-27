@@ -23,7 +23,7 @@ route.post('/',async(req,res)=>{
         await newMember.save();
         console.log("New member successfully added");
         const member=await Members.findOne({email:req.body.email})
-        generateCard(member.name.toUpperCase(),member.memberId,getExpirationDate());
+        generateCard(member.name.toUpperCase(),member.memberId,getExpirationDate(),member._id);
         res.redirect("/member")
 
     }
@@ -31,8 +31,10 @@ route.post('/',async(req,res)=>{
         return console.error(err);
     }
 })
+
+
 registerFont('./static/fonts/RadioCanada-Bold.ttf', { family: 'Radio Canada' });
-async function generateCard(memberName,memberId,expiration) {
+async function generateCard(memberName,memberId,expiration,id) {
     // Load the template image
     const template = await loadImage('./static/images/cardBack.png');
 
@@ -55,7 +57,7 @@ async function generateCard(memberName,memberId,expiration) {
 
     // Save the canvas as an image file
     try{
-        const out = fs.createWriteStream(`./cards/${memberName}_card.png`);
+        const out = fs.createWriteStream(`./cards/${id}.png`);
     const stream = canvas.createPNGStream();
     stream.pipe(out);
     out.on('finish', () => console.log('Card generated successfully'));
@@ -63,4 +65,6 @@ async function generateCard(memberName,memberId,expiration) {
         console.log("Error creating card", err);
     }
 }
+
+
 module.exports=route;
