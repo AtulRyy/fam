@@ -19,7 +19,7 @@ body{
     font-family: poppins, sans-serif;
 }
 
-@media (min-width:961px){
+@media (min-width:800px){
     .nav2{
     height: 12vh;
     display: flex;
@@ -83,7 +83,7 @@ body{
     padding: 20px 35px;
     margin: 15px 0;
     border-radius: 15px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 .memRight h1{
     color: lightgrey;
@@ -170,38 +170,13 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cardFront img {
+.cardFront img, .cardBack img {
     width: 100%;
 }
 .cardFront, .cardBack{
     width: 45%;
 }
-.cardBack{
-    background: url(/static/images/cardBack.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 30px 10px 0px;
-    justify-content: space-around;
-}
-.cardBack div{
-    padding: 25px;
-}
-.cardBack div div h5{
-    color: var(--RedText);
-}
-.cbDown div{
-    display: flex;
-    flex-direction: column;
-}
-.cbTop{
-    font-size: 2rem;
-    color: lightgray;
-}
-.cbDown div div{
-    color: lightgray;
-}
+
 .cardFront, .cardBack{
     border-radius: 25px;
 }
@@ -342,5 +317,51 @@ form div a h5{
 .closebtn{
     display: none;
 }
+.allMemRight{
+    height: 80vh;
+    background: var(--secondary);
+    background-size: cover;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    width: 79vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: ; */
+    text-align: justify;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.allMemRight::-webkit-scrollbar{
+    display: none;
+}
+.tableHead{
+    background: #000000bb;
+}
+.tableHead th{
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+table tr td:first-child{
+    text-align: center;
+}
+table tr td{
+    padding: 10px;
+    background: rgba(181, 181, 236, 0.374);
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.memberTable:hover{
+    background: #000;
+}
 }
 
+.memberTable{
+    cursor: pointer;
+}

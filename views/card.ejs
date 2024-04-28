@@ -26,11 +26,11 @@
         <div class="mainContainer">
             <div class="memLeft">
                 <div class="memLeftTop">
-                    <a href=""><div class="addMem activeMemOption"><i
+                    <a href="/member/add"><div class="addMem activeMemOption"><i
                             class="fa-solid fa-user-plus"></i> &nbsp; Add
                         Members</div>
                     </a>
-                    <a href="/">
+                    <a href="/member/all">
                         <div class="allMem"><i class="fa-solid fa-user"></i> &nbsp;
                         All Members</div>
                 </div>
@@ -47,21 +47,23 @@
                         <img src="/static/images/cardFront.png" alt>
                     </div>
                     <div id="CB" class="cardBack">
-                        <div class="cbTop">FULL NAME</div>
-                        <div class="cbDown">
-                            <div class="cbDownLeft">
-                                <div class="userValue">XXXX-XXXX</div>
-                                <h5>MEMBERSHIP ID</h5>
-                            </div>
-                            <div class="cbDownRight">
-                                <div class="userValue">dd/mm/yyyy</div>
-                                <h5>VALID TILL</h5>
-                            </div>
-                        </div>
+                       <img src="/cards/<%=memberId%>.png" alt="">
                     </div>
                 </div>
-                <div class="printBtn">Print Card</div>
+                <div class="printBtn" onclick="downloadPNG()">Download Card</div>
             </div>
         </div>
+        <script>function downloadPNG() {
+            var back = document.createElement('a');
+            back.download = '<%=name.trim().split(/\s+/)[0]%>_Back.png'; 
+            back.href = '/cards/<%=memberId%>.png'; 
+            back.click(); 
+
+            // var front = document.createElement('a');
+            // front.download = 'cardFront.png'; 
+            // front.href = '/static/images/cardFront.png'; 
+            // front.click(); 
+            
+        }</script>
     </body>
 </html>
