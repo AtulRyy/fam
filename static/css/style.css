@@ -358,7 +358,7 @@ table tr td{
     border-radius: 5px;
 }
 .memberTable:hover{
-    background: x;
+    background: rgb(0, 0, 0);
 }
 }
 
