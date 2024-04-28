@@ -170,38 +170,13 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cardFront img {
+.cardFront img, .cardBack img {
     width: 100%;
 }
 .cardFront, .cardBack{
     width: 45%;
 }
-.cardBack{
-    background: url(/static/images/cardBack.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 30px 10px 0px;
-    justify-content: space-around;
-}
-.cardBack div{
-    padding: 25px;
-}
-.cardBack div div h5{
-    color: var(--RedText);
-}
-.cbDown div{
-    display: flex;
-    flex-direction: column;
-}
-.cbTop{
-    font-size: 2rem;
-    color: lightgray;
-}
-.cbDown div div{
-    color: lightgray;
-}
+
 .cardFront, .cardBack{
     border-radius: 25px;
 }

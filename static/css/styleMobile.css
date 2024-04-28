@@ -151,7 +151,7 @@
     width: 100%;
     justify-content: space-around;
 }
-.cardFront img {
+.cardFront img, .cardBack img {
     width: 100%;
 }
 .cardFront, .cardBack{
@@ -163,20 +163,9 @@
     margin-bottom: 10px;
 
 }
-.cardBack{
-    background: url(/static/images/cardBack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    /* padding: 10px 30px 10px 0px; */
-    justify-content: space-around;
-    height: 25vh;
-}
 
-.cardBack div div h5{
-    color: var(--RedText);
-}
+
+
 .cbDown{
     width: 65%;
 }
@@ -186,20 +175,8 @@
     align-items: center;
     /* margin: 0 20px; */
 }
-.cbTop{
-    font-size: 1.2rem;
-    color: lightgray;
-}
-.cbDown div div{
-    color: lightgray;
-}
-.cbDown div h5{
-    font-size: 0.8rem;
-}
 
-.userValue{
-    font-size: 0.9rem;
-}
+
 
 .loginMainContainer{
     display: flex;
