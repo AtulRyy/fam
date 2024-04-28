@@ -33,11 +33,11 @@
       <div class="memLeft">
         <div class="memLeftTop">
           <a href="/member/add"
-            ><div class="addMem activeMemOption">
+            ><div class="addMem ">
               <i class="fa-solid fa-user-plus"></i> &nbsp; Add Members
             </div></a
           >
-          <a href="/member/all"><div class="allMem">
+          <a href="/member/all"><div class="allMem activeMemOption">
             <i class="fa-solid fa-user"></i> &nbsp; All Members
           </div></a>
         </div>
@@ -47,10 +47,22 @@
           </div>
         </div>
       </div>
-      <div class="memRight2">
-        <% data.forEach(details=>{%>
-            <h1><%=details.name%></h1>
-        <%})%>
+      <div class="allMemRight">
+        <table>
+          <tr class="tableHead">
+            <th>no.</th>
+            <th>MEMBER ID</th>
+            <th>NAME</th>
+            <th>SINCE</th>
+          </tr>
+          <tr>
+          <td>1</td>
+          <td>24aa0000</td>
+          <td>abcfrgrsgregerthg</td>
+          <td>1986</td>
+          </tr>
+          
+        </table>
       </div>
     </div>
   </body>

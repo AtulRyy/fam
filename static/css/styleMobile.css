@@ -47,13 +47,15 @@
     padding: 15px;
     margin-bottom: 20px;
 }
-.memLeftTop div{
+.memLeftTop a div{
     padding: 15px 20px;
     margin: 15px 0;
     width: 80vw;
     border-radius: 15px;
     font-size: 1.2rem;
+    color: lightgrey;
 }
+
 .memLeftDown{
     width: 80vw;
 }
@@ -374,4 +376,52 @@ form div a h5{
 .nav2 div{
     margin: 10px;
 }
+
+.allMemRight{
+    height: 60vh;
+    background: var(--secondary);
+    background-size: cover;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    width: 90vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: ; */
+    text-align: justify;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.allMemRight::-webkit-scrollbar{
+    display: none;
+}
+.tableHead{
+    background: #000000bb;
+}
+.tableHead th{
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+table tr td:first-child{
+    text-align: center;
+}
+table tr td:last-child, 
+table tr th:last-child, 
+table tr td:first-child, 
+table tr th:first-child{
+    display: none;
+}
+table tr td{
+    padding: 10px;
+    background: rgba(181, 181, 236, 0.374);
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
 }
