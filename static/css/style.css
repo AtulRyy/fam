@@ -336,9 +336,9 @@ form div a h5{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.allMemRight::-webkit-scrollbar{
+/* .allMemRight::-webkit-scrollbar{
     display: none;
-}
+} */
 .tableHead{
     background: #000000bb;
 }
@@ -358,7 +358,7 @@ table tr td{
     border-radius: 5px;
 }
 .memberTable:hover{
-    background: #000;
+    background: x;
 }
 }
 
