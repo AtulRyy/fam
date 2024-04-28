@@ -403,7 +403,9 @@ i {
   margin-bottom: 10px;
   text-align: center;
 }
-
+.detailsGrid div .li{
+  color: lightgrey;
+}
 .phoneMenuAccount{
     display: none;
 }
