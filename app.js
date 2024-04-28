@@ -6,6 +6,7 @@ const mongoose=require('mongoose')
 
 app.set('view engine','ejs')
 app.use('/static',express.static('static'))
+app.use('/cards',express.static('cards'))
 
 //ROUTES
 const homeRoute=require('./routes/homeRoute')

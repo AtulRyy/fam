@@ -1,8 +1,10 @@
 const express=require('express')
 const route=express.Router();
 
-route.get('/',(req,res)=>{
-    res.render('card')
+
+route.get('/:id',(req,res)=>{
+    memberId=req.params.id
+    res.render('card',{memberId:memberId})
 })
 route.post('/',(req,res)=>{
     
