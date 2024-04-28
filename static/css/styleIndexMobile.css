@@ -18,11 +18,7 @@
     position: fixed;
     justify-content: space-between;
 } */
-.famTitle{
-    color: var(--RedText);
-    font-size: 3rem;
-    font-family: "Alata", sans-serif;
-}
+
 /* nav div{
     display: flex;
     justify-content: center;
@@ -33,8 +29,9 @@
 .navLeft{
     width: 37.5%;
     justify-content: start;
-    margin-left: 3%;
+    /* margin-left: 3%; */
 }
+
 .navLeft div{
     margin-right: 35px;
 }
@@ -180,12 +177,13 @@ i {
 .eventsTitle,
 .aboutTitle {
   color: lightgrey;
-  font-size: 3rem;
-  height: 10vh;
+  font-size: 2.8rem;
+  /* height: 10vh; */
   display: flex;
   align-items: center;
   font-weight: 800;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 
@@ -268,7 +266,7 @@ i {
   justify-content: center;
 }
 .detailsGrid div {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -279,7 +277,8 @@ i {
 .detailsGridHeading {
   color: var(--primary);
   font-weight: 900;
-  transform: scale(1.05);
+  transform: scale(1.3);
+  margin-bottom: 10px;
   letter-spacing: 2px;
 }
 .location, .usefulLinks, .email, .phone{
@@ -373,7 +372,7 @@ i {
 }
 .famTitle{
     color: var(--RedText);
-    font-size: 3.6rem;
+    font-size: 3.3rem;
     font-family: "Alata", sans-serif;
 }
 .famTitle2{
@@ -393,6 +392,7 @@ i {
 .nav2 div{
     margin: 10px;
 }
-
-
+#mySidebar div a{
+  font-size: 2rem;
+}
 }
