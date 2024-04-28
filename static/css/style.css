@@ -384,3 +384,6 @@ table tr td{
 }
 }
 
+.memberTable{
+    cursor: pointer;
+}
