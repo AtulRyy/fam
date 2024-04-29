@@ -36,7 +36,7 @@ body{
     align-items: center;
 }
 .memLeft, .memRight{
-    min-height: 80vh;
+    /* min-height: 80vh; */
     background: var(--secondary);
     border-radius: 25px;
     padding: 20px;
@@ -49,13 +49,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 80vh;
 }
 .memRight{
     width: 79vw;
     padding: 40px;
+    max-height: 80vh;
 }
 .memRight2{
-    min-height: 80vh;
+    /* min-height: 80vh; */
     background: var(--secondary);
     background-size: cover;
     border-radius: 25px;
