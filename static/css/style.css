@@ -54,7 +54,7 @@ body{
 .memRight{
     width: 79vw;
     padding: 40px;
-    max-height: 80vh;
+    height: 80vh;
 }
 .memRight2{
     /* min-height: 80vh; */
