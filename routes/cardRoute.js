@@ -1,48 +1,21 @@
-const express = require('express')
-const route = express.Router();
+const express=require('express')
+const route=express.Router();
+
+const Members=require('../models/members')
+
 const fs = require('fs')
 const { createCanvas, loadImage, registerFont } = require('canvas')
 
 const generateMemberId = require('../static/js/memberGenerator')
 const getExpirationDate = require('../static/js/getExp')
 
-const Members = require('../models/members');
-const { default: mongoose } = require('mongoose');
 
-const addMemberRoute=require('./allMemberRoute')
-
-
-route.get('/', (req, res) => {
-    res.redirect("/member/all")
+route.get('/:id',async(req,res)=>{
+    const memberId=req.params.id
+    const member=await Members.findOne({_id:memberId})
+    generateCard(member.name.toUpperCase(), member.memberId, getExpirationDate(), member._id);
+    res.render('card',{memberId:memberId,name:member.name})
 })
-
-
-route.get('/add', (req, res) => {
-    res.render('members')
-})
-
-route.use("/all",addMemberRoute)
-
-route.post('/', async (req, res) => {
-    try {
-        const newMember = new Members({
-            name: req.body.name,
-            email: req.body.email,
-            phone: req.body.phone,
-            memberId: generateMemberId()
-        })
-        await newMember.save();
-        console.log("New member successfully added");
-        const member = await Members.findOne({ email: req.body.email })
-        generateCard(member.name.toUpperCase(), member.memberId, getExpirationDate(), member._id);
-        res.redirect("/member")
-
-    }
-    catch (err) {
-        return console.error(err);
-    }
-})
-
 
 registerFont('./static/fonts/RadioCanada-Bold.ttf', { family: 'Radio Canada' });
 async function generateCard(memberName, memberId, expiration, id) {
@@ -77,5 +50,4 @@ async function generateCard(memberName, memberId, expiration, id) {
     }
 }
 
-
-module.exports = route;
+module.exports=route;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Members</title>
     <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/output.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -52,14 +53,15 @@
       <div class="allMemRight">
         <% i=0;
           data.forEach(member=>{%>
-        <div class="memberInfo">
+        <div class="memberInfo relative">
+          <a href="/member/delete/<%=member.id%>"><i class="fa-solid fa-trash text-2xl absolute text-red-700 right-8 top-7"></i></a>
             <div><b>Full Name:</b> <%=member.name%></div>
             <div><b>Email ID:</b> <%=member.email%></div>
             <div><b>Phone no.:</b> <%=member.phone%></div>
             <div><b>Member ID:</b> <%=member.memberId%></div>
             <div class="memInfoOptions">
               <div><a href="/card/<%=member._id%>">Membership Card</a></div>
-              <div><a href="">Edit</a></div>
+              <div><a href="/edit/<%=member._id%>">Edit</a></div>
             </div>
           </div>
           <%})%>

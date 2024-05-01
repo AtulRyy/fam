@@ -10,9 +10,10 @@ app.use('/cards',express.static('cards'))
 
 //ROUTES
 const homeRoute=require('./routes/homeRoute')
-const cardRoute=require('./routes/createCardRoute')
+const cardRoute=require('./routes/cardRoute.js')
 const loginRoute=require('./routes/loginRoute')
-const memberRoute=require('./routes/memberRoute')
+const memberRoute=require('./routes/createMemberRoute.js')
+const updateMemberRoute=require("./routes/updateMemberRoute.js")
 
 app.set("view engine","ejs")
 app.use(express.urlencoded({extended:false}))
@@ -35,4 +36,5 @@ app.use('/',homeRoute);
 app.use('/card',cardRoute);
 app.use('/login',loginRoute)
 app.use('/member',memberRoute)
+app.use("/edit",updateMemberRoute)
 
