@@ -100,10 +100,9 @@ html {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  width: 0;
+  background: transparent;
 }
-/* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #ff0000;
 }
@@ -132,6 +131,7 @@ a {
 }
 .profile:hover {
   padding-bottom: none;
+  color: var(--primary);
 }
 .leftNav {
   display: flex;
@@ -150,7 +150,9 @@ a {
 .middleNav {
   display: flex;
 }
-
+.fa-user-circle:hover{
+  color: var(--primary);
+}
 .rightNav {
   display: flex;
   justify-content: end;
@@ -274,7 +276,7 @@ i {
   align-items: center;
 }
 .gridContainer {
-  width: 96vw;
+  width: 80vw;
   height: 75vh;
   display: flex;
 }
@@ -384,27 +386,25 @@ i {
   height: 15vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 10vw;
 }
 .detailsGrid {
   display: flex;
-  padding-left: 3vw;
-  padding-bottom: 5vh;
-  justify-content: space-evenly;
+  padding: 0 10vw 5vh 10vw;
 }
 .detailsGrid div {
   font-size: 1.1rem;
-  text-align: center;
+  padding-right: 4vw;
 }
-.detailsGridHeading {
-  color: var(--primary);
-  font-weight: 700;
-  transform: scale(1.4);
-  margin-bottom: 10px;
-  text-align: center;
-}
-.detailsGrid div .li{
+.detailsGrid div:first-child{
+  font-size: 1.8rem;
   color: lightgrey;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.detailsGrid div .li{
+  color: white;
 }
 .phoneMenuAccount{
     display: none;
@@ -417,16 +417,16 @@ i {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  z-index: 0;
+  /* width: 10px; */
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.538); 
-  border-radius: 100px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0); 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(100, 100, 100, 0.7); 
+  background: rgba(141, 140, 140, 0.7); 
   border-radius: 10px;
 }
 
