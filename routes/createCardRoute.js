@@ -5,7 +5,7 @@ const Members=require('../models/members')
 
 
 route.get('/:id',async(req,res)=>{
-    memberId=req.params.id
+    const memberId=req.params.id
     const member=await Members.findOne({_id:memberId})
     res.render('card',{memberId:memberId,name:member.name})
 })
