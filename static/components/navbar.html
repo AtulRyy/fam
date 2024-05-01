@@ -4,9 +4,9 @@
           class="closebtn">
           <i class="fa-solid fa-xmark"></i>
       </div>
-      <div class="firstOption ACTIVE"><a href="#homePageLink">Home</a></div>
-      <div><a href="#aboutPageLink">About us</a></div>
-      <div><a href="#eventsPageLink">Events</a></div>
+      <div class="firstOption "><a onclick="setHomeActive()" id="homeOption" href="#homePageLink">Home</a></div>
+      <div><a href="#aboutPageLink" id="aboutOption" onclick="setAboutActive()" >About us</a></div>
+      <div><a href="#eventsPageLink" id="eventsOption" onclick="setEventsActive()">Events</a></div>
   </div>
   <div id="main" class="navMid">
       <button class="openbtn" onclick="openNav()"><i
