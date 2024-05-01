@@ -49,13 +49,18 @@ nav div{
 .navLeft div{
     margin-right: 35px;
 }
-.navLeft .ACTIVE,
-.navLeft div:hover
+.navLeft .ACTIVE
 {
     color: var(--lightRedText);
     border-bottom: 4px solid var(--lightRedText);
     border-radius: 3px;
     padding-bottom: 6px;
+    cursor: pointer;
+}
+.navLeft div:hover{
+    color: var(--lightRedText);
+    /* border-bottom: 0px solid var(--lightRedText); */
+    border-radius: 3px;
     cursor: pointer;
 }
 .contactUs:hover{
@@ -405,6 +410,7 @@ i {
 
 .detailsGrid div .li{
   color: white;
+  font-weight: 100;
 }
 .phoneMenuAccount{
     display: none;

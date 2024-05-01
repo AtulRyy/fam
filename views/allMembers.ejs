@@ -50,7 +50,20 @@
         </div>
       </div>
       <div class="allMemRight">
-        <table>
+        <% i=0;
+          data.forEach(member=>{%>
+        <div class="memberInfo">
+            <div><b>Full Name:</b> <%=member.name%></div>
+            <div><b>Email ID:</b> <%=member.email%></div>
+            <div><b>Phone no.:</b> <%=member.phone%></div>
+            <div><b>Member ID:</b> <%=member.memberId%></div>
+            <div class="memInfoOptions">
+              <div><a href="/card/<%=member._id%>">Membership Card</a></div>
+              <div><a href="">Edit</a></div>
+            </div>
+          </div>
+          <%})%>
+        <!-- <table>
           <tr class="tableHead">
             <th>no.</th>
             <th>MEMBER ID</th>
@@ -68,9 +81,8 @@
               <td><%=member.name%></td>
               <td>2024</td>
           </tr>
-
           <%})%>
-        </table>
+        </table> -->
       </div>
     </div>
   </body>
