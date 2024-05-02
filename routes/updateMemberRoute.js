@@ -18,7 +18,11 @@ router.route("/:id")
         if(member.phone!==req.body.phone){
             updatedData.phone=req.body.phone
         }
-        await Members.findByIdAndUpdate(memberId, updatedData)
+        try{
+            await Members.findByIdAndUpdate(memberId, updatedData)
+        }catch(err){
+console.log("Could not update User ",err);
+        }
         res.redirect("/member/all")
     })
 
