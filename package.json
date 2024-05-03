@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --ignore memberCount.json app.js",
-    "tailwind": "npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
