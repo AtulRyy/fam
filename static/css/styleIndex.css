@@ -187,7 +187,7 @@ i {
 }
 .mainPage {
   display: flex;
-  height: calc(100vh);
+  height: calc(88vh);
   background-image: url(/static/images/bg.png);
   background-size: cover;
 }
@@ -232,7 +232,6 @@ i {
 }
 .eventsPage,
 .aboutPage {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url(/static/images/bg2.png);

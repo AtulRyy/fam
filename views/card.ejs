@@ -13,11 +13,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
             rel="stylesheet">
-            <link rel="stylesheet" href="/static/css/styleMobile.css">
+        <link rel="stylesheet" href="/static/css/styleMobile.css">
         <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
     </head>
-    <body>
+    <body onload="loader()">
+        <!-- <span id="loader"></span> -->
         <div class="nav2">
             <div class="famTitle2">FAM</div>
             <div class="logout"><i class="fa-solid fa-right-from-bracket"></i>
@@ -27,15 +28,16 @@
             <div class="memLeft">
                 <div class="memLeftTop">
                     <a href="/member/add"><div class="addMem activeMemOption"><i
-                            class="fa-solid fa-user-plus"></i> &nbsp; Add
-                        Members</div>
+                                class="fa-solid fa-user-plus"></i> &nbsp; Add
+                            Members</div>
                     </a>
                     <a href="/member/all">
-                        <div class="allMem"><i class="fa-solid fa-user"></i> &nbsp;
-                        All Members</div>
-                </div>
-                    </a>
-                    
+                        <div class="allMem"><i class="fa-solid fa-user"></i>
+                            &nbsp;
+                            All Members</div>
+                    </div>
+                </a>
+
                 <div class="memLeftDown">
                     <div class="memSettings"><i class="fa-solid fa-gear"></i>
                         &nbsp; Settings</div>
@@ -47,10 +49,11 @@
                         <img src="/static/images/cardFront.png" alt>
                     </div>
                     <div id="CB" class="cardBack">
-                       <img src="/cards/<%=memberId%>.png" alt="">
+                        <img src="/cards/<%=memberId%>.png" alt>
                     </div>
                 </div>
-                <div class="printBtn" onclick="downloadPNG()">Download Card</div>
+                <div class="printBtn" onclick="downloadPNG()">Download
+                    Card</div>
             </div>
         </div>
         <script>function downloadPNG() {
@@ -59,11 +62,18 @@
             back.href = '/cards/<%=memberId%>.png'; 
             back.click(); 
 
-            // var front = document.createElement('a');
-            // front.download = 'cardFront.png'; 
-            // front.href = '/static/images/cardFront.png'; 
-            // front.click(); 
-            
-        }</script>
+        //     var front = document.createElement('a');
+        //     front.download = 'cardFront.png'; 
+        //     front.href = '/static/images/cardFront.png'; 
+        //     front.click();             
+        // }
+                // document.getElementsByClassName("nav2").style.display="none";
+                // document.getElementsByClassName("mainContainer").style.display="none";
+                //     function loader(){
+                // document.getElementById("loader").style.display="none";
+                // document.getElementsByClassName("nav2").style.display="flex";
+                // document.getElementsByClassName("mainContainer").style.display="flex";
+                }
+        </script>
     </body>
 </html>
